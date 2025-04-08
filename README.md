@@ -16,7 +16,7 @@ Hotelservice - микросервис для бронирования отеле
 ```
 POST /hotelservice/api/v1/reservations/
 Content-Type: application/json
-X-User-Name: {{username}}
+X-User-Name: Dmitry
 
 
 json
@@ -37,9 +37,9 @@ json
 
 **Request:**
 ```
-DELETE /hotelservice/api/v1/reservations/{{reservationUid}}/
+DELETE /hotelservice/api/v1/reservations/d6766139-b33e-4cf4-bbbf-70d688399c98/
 Content-Type: application/json
-X-User-Name: {{username}}
+X-User-Name: Dmitry
 ```
 
 Бронирование удалится, если:
