@@ -13,12 +13,12 @@ Hotelservice - микросервис для бронирования отеле
 > Бронирование.
 
 **Request:**
-```POST /hotelservice/api/v1/reservations
+```POST /hotelservice/api/v1/reservations/
 Content-Type: application/json
-X-User-Name: {{username}}```
+X-User-Name: {{username}}
 
 
-```json
+json
 {
     "hotelUid": "7951c718-18be-4039-8635-d3252b8ef5b6",
     "startDate": "2025-10-08",
