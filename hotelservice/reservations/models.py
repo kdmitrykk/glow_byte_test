@@ -60,7 +60,7 @@ class LoyaltyModel(models.Model):
 
     def __str__(self):
         """Текстовое представление."""
-        return f'{self.username}'
+        return self.username
 
 
 class ReservationModel(models.Model):

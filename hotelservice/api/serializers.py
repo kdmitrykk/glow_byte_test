@@ -25,8 +25,7 @@ class ReservationSerializer(serializers.ModelSerializer):
                 "Дата начала бронирования должна быть раньше даты конца.")
         if data['startDate'] < date.today():
             raise serializers.ValidationError(
-                "Дата начала бронирования не может быть в прошлом."
-            )
+                "Дата начала бронирования не может быть в прошлом.")
         return data
 
     class Meta:

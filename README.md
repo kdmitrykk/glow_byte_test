@@ -13,7 +13,8 @@ Hotelservice - микросервис для бронирования отеле
 > Бронирование.
 
 **Request:**
-```POST /hotelservice/api/v1/reservations/
+```
+POST /hotelservice/api/v1/reservations/
 Content-Type: application/json
 X-User-Name: {{username}}
 
@@ -35,7 +36,8 @@ json
 > Отмена бронирования.
 
 **Request:**
-```DELETE /hotelservice/api/v1/reservations/{{reservationUid}}/
+```
+DELETE /hotelservice/api/v1/reservations/{{reservationUid}}/
 Content-Type: application/json
 X-User-Name: {{username}}
 ```

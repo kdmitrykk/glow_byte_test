@@ -76,7 +76,7 @@ class ReservationViewSet(mixins.CreateModelMixin,
 
         if str(reservation.username) != username:
             return Response(
-                {"error": "Вы не можете отменять чужие бронировая."},
+                {"error": "Вы не можете отменять чужие бронирования."},
                 status=status.HTTP_403_FORBIDDEN
             )
 
@@ -90,7 +90,7 @@ class ReservationViewSet(mixins.CreateModelMixin,
         reservation.save()
 
         loyalty = LoyaltyModel.objects.get(username=username)
-        loyalty.total_reservations = max(0, loyalty.total_reservations - 1)
+        loyalty.total_reservations -= 1
         self.update_loyalty_status(loyalty)
         loyalty.save()
 
