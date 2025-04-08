@@ -31,6 +31,7 @@ class ReservationSerializer(serializers.ModelSerializer):
 
     class Meta:
         """Вспомогательный класс Meta."""
+
         model = ReservationModel
         fields = ['reservationUid', 'hotelUid',
                   'startDate', 'endDate']

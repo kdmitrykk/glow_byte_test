@@ -15,7 +15,6 @@ class ReservationViewSet(mixins.CreateModelMixin,
 
     def create(self, request, *args, **kwargs):
         """Создание объекта бронирования."""
-
         username = request.headers.get('X-User-Name')
         if not username:
             return Response(
