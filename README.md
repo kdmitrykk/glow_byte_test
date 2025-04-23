@@ -54,7 +54,7 @@ X-User-Name: Dmitry
 
 1. Клонируйте репозиторий:
     ```bash
-    git clone https://github.com/kdmitrykk/glow_byte_test
+    git clone https://github.com/kdmitrykk/hotelservice.git
     ```
 
 2. Перейдите в директорию проекта:
